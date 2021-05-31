@@ -8,7 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-    let countries: [String] = ["estonia", "france", "germany", "ireland", "italy", "monaco", "nigeria", "poland", "russia", "spain", "uk", "us"]
+    var countries: [String] = ["estonia", "france", "germany", "ireland", "italy", "monaco", "nigeria", "poland", "russia", "spain", "uk", "us"]
+    var correctAnswer: Int = 0
     var score: Int = 0
     @IBOutlet var button1: UIButton!
     @IBOutlet var button2: UIButton!
@@ -18,6 +19,9 @@ class ViewController: UIViewController {
         self.askQuestion()
     }
     func askQuestion() {
+        self.correctAnswer = Int.random(in: 0...2)
+        self.title = self.countries[self.correctAnswer].uppercased()
+        self.countries.shuffle()
         self.button1.setImage(UIImage(named: self.countries[0]), for: .normal)
         self.button2.setImage(UIImage(named: self.countries[1]), for: .normal)
         self.button3.setImage(UIImage(named: self.countries[2]), for: .normal)
