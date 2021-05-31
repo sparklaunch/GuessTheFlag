@@ -56,15 +56,39 @@
 		2E95AACD2664DA3300443CF5 /* GuessTheFlag */ = {
 			isa = PBXGroup;
 			children = (
+				2E95AAE42664DA4E00443CF5 /* Models */,
 				2E95AACE2664DA3300443CF5 /* AppDelegate.swift */,
 				2E95AAD02664DA3300443CF5 /* SceneDelegate.swift */,
-				2E95AAD22664DA3300443CF5 /* ViewController.swift */,
-				2E95AAD42664DA3300443CF5 /* Main.storyboard */,
+				2E95AAE32664DA4700443CF5 /* Controllers */,
+				2E95AAE22664DA4100443CF5 /* Views */,
 				2E95AAD72664DA3500443CF5 /* Assets.xcassets */,
 				2E95AAD92664DA3500443CF5 /* LaunchScreen.storyboard */,
 				2E95AADC2664DA3500443CF5 /* Info.plist */,
 			);
 			path = GuessTheFlag;
+			sourceTree = "<group>";
+		};
+		2E95AAE22664DA4100443CF5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2E95AAD42664DA3300443CF5 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2E95AAE32664DA4700443CF5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2E95AAD22664DA3300443CF5 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2E95AAE42664DA4E00443CF5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
