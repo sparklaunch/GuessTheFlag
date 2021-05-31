@@ -8,8 +8,19 @@
 import UIKit
 
 class ViewController: UIViewController {
+    let countries: [String] = ["estonia", "france", "germany", "ireland", "italy", "monaco", "nigeria", "poland", "russia", "spain", "uk", "us"]
+    var score: Int = 0
+    @IBOutlet var button1: UIButton!
+    @IBOutlet var button2: UIButton!
+    @IBOutlet var button3: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.askQuestion()
+    }
+    func askQuestion() {
+        self.button1.setImage(UIImage(named: self.countries[0]), for: .normal)
+        self.button2.setImage(UIImage(named: self.countries[1]), for: .normal)
+        self.button3.setImage(UIImage(named: self.countries[2]), for: .normal)
     }
 }
 
