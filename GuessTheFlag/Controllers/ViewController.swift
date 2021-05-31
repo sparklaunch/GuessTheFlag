@@ -21,6 +21,12 @@ class ViewController: UIViewController {
         self.button1.setImage(UIImage(named: self.countries[0]), for: .normal)
         self.button2.setImage(UIImage(named: self.countries[1]), for: .normal)
         self.button3.setImage(UIImage(named: self.countries[2]), for: .normal)
+        self.button1.layer.borderWidth = 1.0
+        self.button2.layer.borderWidth = 1.0
+        self.button3.layer.borderWidth = 1.0
+        self.button1.layer.borderColor = UIColor.lightGray.cgColor
+        self.button2.layer.borderColor = UIColor.lightGray.cgColor
+        self.button3.layer.borderColor = UIColor.lightGray.cgColor
     }
 }
 
